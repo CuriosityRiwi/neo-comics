@@ -1,0 +1,86 @@
+.nav-size {
+  font-size: 1.25rem;
+}
+
+.vh-70 {
+    height: 70vh;
+    background-image: url(../img/gallery/artorias.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.vh-70::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp;
+}
+
+.card-circle {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.card-event {
+  width: 35rem;
+}
+
+.card-event-img {
+  width: 100%;
+  height: 20rem;   
+  object-fit: cover; 
+}
+
+.form-measures {
+  width: 50rem;
+
+
+}
+
+
+
+.footer-custom {
+  background-color: #182433; 
+}
+
+.footer-custom p {
+  color: #cdd3df; 
+  font-size: 0.95rem;
+}
+
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #cdd3df;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cdd3df;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-circle:hover {
+  background-color: #cdd3df;
+  color: #182433;
+}
