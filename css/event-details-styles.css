@@ -1,9 +1,12 @@
-
-
+body {
+    padding-top: var(--header-height);
+    margin: 0;
+}
 
 /* ancho máximo de la maqueta */
 .page {
     max-width: 1100px;
+    margin-top: 120px;               
 }
 
 /* alto del placeholder de imagen */
@@ -48,9 +51,3 @@
     border-color: #911096!important;
 }
 
-
-@media (max-width: 768px) {
-.navbar-custom .navbar-nav {
-    align-items: flex-start;
-}
-}
