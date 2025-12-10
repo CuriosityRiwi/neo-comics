@@ -6,52 +6,51 @@ body{
     
 }
 
-header {
-    background-color: #240b52; 
-    position: fixed;   /* Hace el header fijo */
-    top: 0;            /* Lo fija en la parte superior */
-    left: 0;
-    width: 100%;       /* Ocupa todo el ancho */
-    z-index: 1000;     /* Lo mantiene por encima del contenido */  
+.header-color {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+  position: fixed;   /* Hace el header fijo */
+  top: 0;            /* Lo fija en la parte superior */
+  left: 0;
+  width: 100%;       /* Ocupa todo el ancho */
+  z-index: 1000;    /* Lo mantiene por encima del contenido */  
 }
 
-header .row {
-    display: flex;
-    align-items: center;
-}
 
 .logo_head {
-    height: 100px;
-    width: 100px;
-    background: transparent;
-    border-radius: 50%;
-    transition: 0.3s ease-in;
-    
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
 }
 
+.logo_head img {
+  width: 100%;   /* todo el ancho del contenedor */
+  height: auto;  /* mantiene proporción */
+}
 .logo_head:hover{
-    filter: drop-shadow(0 0 10px #4811ad)
-            drop-shadow(0 0 20px #d614c6)
-            drop-shadow(0 0 10px #dddbe0);
-    transform: scale3d(1.05);
+  filter: drop-shadow(0 0 10px #5000e4)
+          drop-shadow(0 0 20px #d614c6)
+          drop-shadow(0 0 10px #dddbe0);
+  transform: scale3d(1.05);
 }
 
 .vincule{
-cursor: pointer;
-color: white;
-margin-top: 15px;
-transition: 0.3s ease;
-text-shadow: 0px 0px 5px #d115d8;
-text-decoration: none;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
 }
 
-.vincule:hover{
-    background-color: #812299;
-    filter: drop-shadow(0 0 10px #4811ad)
-            drop-shadow(0 0 20px #d614c6)
-            drop-shadow(0 0 10px #806aa1);
-    border-radius: 8px;
-    transform: scale(1.05);
+
+.vincule:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 6px #c23cff)
+            drop-shadow(0 0 12px #4512bd)
+            drop-shadow(0 0 20px #510464);
 }
 main{
     margin-top: 150px;
@@ -61,7 +60,7 @@ main{
     font-size: 60px;
     font-weight: 900;
     text-align: center;
-
+    margin-top: 90px;
     background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
