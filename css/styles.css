@@ -39,14 +39,16 @@ body {
   color: white;
   transition: 0.3s ease;
   text-decoration: none;
+  font-weight: 600px;
 }
 
 
 .vincule:hover {
     color: #ffffff;
-    filter: drop-shadow(0 0 6px #c23cff)
-            drop-shadow(0 0 12px #4512bd)
-            drop-shadow(0 0 20px #510464);
+    filter: drop-shadow(0 0 6px #f50aa7)
+            drop-shadow(0 0 12px #b31fb3)
+            drop-shadow(0 0 20px #dfd5e0);
+
 }
 
 .navbar {
@@ -56,36 +58,47 @@ body {
 
 .nav-item {
   margin-left: 35px;
+  
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
 
-.vh-70 {
-  height: 70vh;
-  background-image: url(../img/gallery/back.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero-video {
   position: relative;
+  height: 100vh;
+  overflow: hidden;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.vh-70::before {
-  content: "";
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.4); 
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 2; 
 }
-
 
 
 .hero-title {
@@ -95,6 +108,7 @@ body {
 
   background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
 
+  padding-top: 0 !important;
 
   -webkit-background-clip: text;
   background-clip: text;
@@ -105,8 +119,51 @@ body {
 
   text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
   display: inline-block; 
+  padding-top: 0 !important;
 }
 
+
+.subtitle-color{
+  background: linear-gradient(307deg, #1be0e0, #f731e7);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  width: 18rem;
+  background-color:  rgb(26, 25, 25);
+  
+}
+
+.card-border {
+  transition: 0.5s ease-in-out;
+
+}
+
+.card-border:hover {
+  box-shadow: #8e07af 0px 0px 10px,
+            #a76da2 0px 0px 20px,
+            #dddbe0 0px 0px 10px;
+  transform: scale(1.05);
+}
+
+.card-title {
+  background: linear-gradient(90deg,  #7c4dea, #00c4ff,  #7c4dea, #00c4ff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-text {
+  color: white;
+}
 
 .card-circle {
     height: 150px;
@@ -126,8 +183,6 @@ body {
 
 .form-measures {
   width: 50rem;
-
-
 }
 
 
