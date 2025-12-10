@@ -111,6 +111,48 @@ body {
 }
 
 
+.subtitle-color{
+  background: linear-gradient(307deg, #1be0e0, #f731e7);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  width: 18rem;
+  background-color:  rgb(26, 25, 25);
+  
+}
+
+.card-border {
+  transition: 0.5s ease-in-out;
+
+}
+
+.card-border:hover {
+  box-shadow: #8e07af 0px 0px 10px,
+            #a76da2 0px 0px 20px,
+            #dddbe0 0px 0px 10px;
+  transform: scale(1.05);
+}
+
+.card-title {
+  background: linear-gradient(90deg,  #7c4dea, #00c4ff,  #7c4dea, #00c4ff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-text {
+  color: white;
+}
+
 .card-circle {
     height: 150px;
     width: 150px;
