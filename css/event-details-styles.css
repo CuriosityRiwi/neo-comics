@@ -1,3 +1,4 @@
+
 /* ancho máximo de la maqueta */
 .page {
     max-width: 1100px;
@@ -21,11 +22,29 @@
 }
 
 
+.table-dark {
+    --bs-table-bg: #131212;        /* fondo de las celdas */
+    --bs-table-hover-bg: #181818;  /* fondo cuando pasas el mouse */
+}
 
+.bg-bottom {
+    background-color: #000000;
+    background-image:
+        radial-gradient(circle at top left, #000001 0, transparent 55%),
+        radial-gradient(circle at bottom right, #000000 0, transparent 55%),
+        radial-gradient(circle at center, #000000 0, #1d0418 70%);
+    color: #f9fafb;
+}
 
-
-
-
+.hero-image {
+    height: 260px;
+    background-image: url("../img/events/Cosplays5.jpg");
+    background-size: cover;       /* llena todo */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* que no se repita */
+    border-radius: 20px;
+    border-color: #911096!important;
+}
 
 
 
