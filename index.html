@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NeoComics</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <header class="header-color">
         <nav class="navbar navbar-expand-lg">
             <div class="container d-flex align-items-center">
-                <a class="logo_head" href="#">
+                <a class="logo_head" href="index.html">
                     <img src="img/logo/LOGO.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +23,13 @@
                 <div class="collapse navbar-collapse me-5" id="navbarNav">
                 <ul class="navbar-nav d-flex align-items-center ms-auto nav-size">
                     <li class="nav-item">
-                    <a class="nav-link vincule animate__animated animate__backInUp" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link vincule animate__animated animate__backInUp" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link vincule animate__animated animate__backInUp" href="#">Eventos</a>
+                    <a class="nav-link vincule animate__animated animate__backInUp" href="event-list.html">Eventos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link vincule animate__animated animate__backInUp" href="#">Galería</a>
+                    <a class="nav-link vincule animate__animated animate__backInUp" href="gallery.html">Galería</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link vincule animate__animated animate__backInUp" href="#">Contacto</a>
@@ -44,8 +42,13 @@
 
 
     <main>
-      <!-- HERO -->
-      <section class="container-fluid d-flex flex-column justify-content-center align-items-center text-center vh-70">
+      <section class="hero-video container-fluid d-flex flex-column justify-content-center align-items-center text-center vh-70">
+
+        <video class="hero-bg-video" autoplay muted loop playsinline>
+          <source src="img/gallery/black.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
 
         <div class="hero-content">
           <h1 class="hero-title text-white">NeoComics 2025</h1>
@@ -54,50 +57,51 @@
           </p>
           <a href="#" class="btn btn-dark btn-lg">
             Ver próximos eventos
-          </a>          
+          </a>
         </div>
       </section>
+
 
       <!--SECTION QUE ENCONTRARÁS-->
       <section class="container-fluid">
         <div class="row">
-          <h2 class="text-center text-white my-5">¿Qué encontrarás en la convención?</h2>
+          <h2 class="text-center subtitle-color my-5 fs-1">¿Qué encontrarás en la convención?</h2>
 
-          <div class="col-12 col-sm-6 col-xl-3 text-center">
-            <div class="card border-0 mx-auto" style="width: 18rem;">
+          <div class="col-12 col-sm-6 col-xl-3 text-center d-flex">
+            <div class="card border-0 mx-auto">
               <img src="img/gallery/game.jpeg" class="rounded-circle card-circle mx-auto d-block " alt="...">
               <div class="card-body">
-                <h5 class="card-title">Videojuegos</h5>
+                <h5 class="card-title fs-4">Videojuegos</h5>
                 <p class="card-text">Torneos competitivos y pruebas de nuevos lanzamientos</p>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-xl-3 text-center">
+          <div class="col-12 col-sm-6 col-xl-3 text-center d-flex">
             <div class="card border-0 mx-auto" style="width: 18rem;">
               <img src="img/gallery/manga.jpeg" class="rounded-circle card-circle mx-auto d-block" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Manga</h5>
+                <h5 class="card-title fs-4">Manga</h5>
                 <p class="card-text">Stands de coleccionistas y presentaciones de autores</p>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-xl-3 text-center">
+          <div class="col-12 col-sm-6 col-xl-3 text-center d-flex">
             <div class="card border-0 mx-auto" style="width: 18rem;">
               <img src="img/gallery/comic.jpeg" class="rounded-circle card-circle mx-auto d-block" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Comics</h5>
+                <h5 class="card-title fs-4">Comics</h5>
                 <p class="card-text">Colecciones y ventas de comics, desde antiguedades hasta lo más nuevo</p>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-xl-3 text-center">
+          <div class="col-12 col-sm-6 col-xl-3 text-center d-flex">
             <div class="card border-0 mx-auto" style="width: 18rem;">
               <img src="img/gallery/anime.jpeg" class="rounded-circle card-circle mx-auto d-block" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Anime</h5>
+                <h5 class="card-title fs-4">Anime</h5>
                 <p class="card-text">Proyecciones exclusivas y maratones de tus series favoritas</p>
               </div>
             </div>      
@@ -107,15 +111,15 @@
       <!--PROXIMOS EVENTOS-->
 
       <section class="container-fluid mb-5">
-        <div class="d-flex flex-column justify-content-center align-items-center text-center">
-          <h2 class="my-5" style="color: white;">Próximos eventos</h2>
-          <h2 class="mb-5" style="color: white;">Torneos, exhibiciones, charlas y más</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h2 class="my-5 subtitle-color fs-1">Próximos eventos</h2>
+          <h2 class="mb-5 card-title fs-5">Torneos, exhibiciones, charlas y más</h2>
         </div>
 
 
         <div class="row">
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/esport.jpg" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Torneo de Esports</h5>
@@ -127,7 +131,7 @@
           </div>
 
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/comic-fest.jpg" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Feria del Comic</h5>
@@ -139,7 +143,7 @@
           </div>
 
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/expo-anime.png" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Expo Anime</h5>
@@ -154,7 +158,7 @@
 
         <div class="row mt-5">
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/Feria-del-manga.jpg" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Feria del Manga</h5>
@@ -166,7 +170,7 @@
           </div>
 
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/gaming-night.jpg" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Gaming night</h5>
@@ -178,7 +182,7 @@
           </div>
 
           <div class="col-12 col-md-4 d-flex">
-            <div class="card card-event mx-auto h-100">
+            <div class="card card-border card-event mx-auto h-100">
               <img src="img/events/anime-night.jpg" class="card-img-top card-event-img" alt="...">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Anime night</h5>
@@ -193,14 +197,14 @@
 
       <!-- NOTICIAS -->
       <section class="container-fluid my-5">
-        <h2 class="text-center">Noticias</h2>
+        <h2 class="text-center subtitle-color fs-1">Noticias</h2>
         
         <div class="row">
           <div class="col-12 col-md-4 d-flex">
             <div class="card mx-auto card-event">
               <div class="card-body">
                 <img src="img/gallery/tatsuki-fujimoto-17-26.jpeg" class="rounded-circle card-circle my-4 d-block" alt="">
-                <h6 class="card-title mb-2">Tatsumi Fujimoto 17-26</h6>
+                <h6 class="card-title mb-2 fs-4 fs-4">Tatsumi Fujimoto 17-26</h6>
                 <p class="card-text">Los primeros animes de Tatsuki Fujimoto, creador de Chainsaw Man, se estrenaron en una serie antológica llamada Tatsuki Fujimoto 17-26, disponible globalmente en Amazon Prime Video a partir del 7/8 de noviembre de 2025</p>
               </div>
             </div>
@@ -210,7 +214,7 @@
             <div class="card mx-auto card-event">
               <div class="card-body">
                 <img src="img/events/GOTY.jpg" class="rounded-circle card-circle my-4 d-block" alt="">
-                <h6 class="card-title mb-2">Game Awards 2025</h6>
+                <h6 class="card-title mb-2 fs-4">Game Awards 2025</h6>
                 <p class="card-text">La ceremonia se llevará a cabo el jueves 11 de diciembre de 2025 desde el Peacock Theater en Los Ángeles, en un evento que promete mantener su formato espectacular y lleno de anuncios</p>
               </div>
             </div>
@@ -220,7 +224,7 @@
             <div class="card mx-auto card-event">
               <div class="card-body">
                 <img src="img/events/30mb-awards-onachan-768x349.png" class="rounded-circle card-circle my-4 d-block" alt="">
-                <h6 class="card-title mb-2">Ganadores de los premios Manga</h6>
+                <h6 class="card-title mb-2 fs-4">Ganadores de los premios Manga</h6>
                 <p class="card-text">Ya conocemos los ganadores de los Manga NeoComics. Estos galardones buscan reconocer las mejores obras de manga y anime de diferentes categorías publicadas en evento durante el último año, en el periodo que va del 1 de octubre de 2024 al 30 de septiembre de 2025</p>
               </div>
             </div>
@@ -232,7 +236,7 @@
 
       <section class="container-fluid my-5">
 
-        <h2 class="mb-5 text-center">Contacto</h2>
+        <h2 class="mb-5 text-center subtitle-color fs-1">Contacto</h2>
 
         <div class="row justify-content-center">
 
@@ -240,21 +244,21 @@
             <form class="mx-auto form-measures">
 
               <div class="row mb-3">
-                <label for="inputEmail3" class="col-12 col-md-2 col-form-label">Email</label>
+                <label for="inputEmail3" class="col-12 col-md-2 col-form-label subtitle-color fs-5">Email</label>
                 <div class="col-12 col-md-10">
                   <input type="email" class="form-control" id="inputEmail3">
                 </div>
               </div>
 
               <div class="row mb-3">
-                <label for="inputName" class="col-12 col-md-2 col-form-label">Nombre</label>
+                <label for="inputName" class="col-12 col-md-2 col-form-label subtitle-color fs-5">Nombre</label>
                 <div class="col-12 col-md-10">
                   <input type="text" class="form-control" id="inputName">
                 </div>
               </div>
 
               <div class="row mb-3">
-                <label for="inputText" class="col-12 col-md-2 col-form-label">Mensaje</label>
+                <label for="inputText" class="col-12 col-md-2 col-form-label subtitle-color fs-5">Mensaje</label>
                 <div class="col-12 col-md-10">
                   <input type="text" class="form-control" id="inputText">
                 </div>
@@ -284,10 +288,10 @@
           </div>
 
         </div>
-      </section>que que 
+      </section>
 
 
-    </main>que 
+    </main>
 
     <!--FOOTER-->
 
@@ -301,9 +305,9 @@
 
 
         <div class="footer-social d-flex gap-3">
-          <a href="#" class="social-circle">F</a>
-          <a href="#" class="social-circle">I</a>
-          <a href="#" class="social-circle">Y</a>
+          <a href="#" class="social-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg></a>
+          <a href="#" class="social-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-8a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-4 5a4 4 0 0 0 -3.995 3.8l-.005 .2a4 4 0 1 0 4 -4m4.5 -1.5a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" /></svg></a>
+          <a href="#" class="social-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg></a>
         </div>
 
       </div>
