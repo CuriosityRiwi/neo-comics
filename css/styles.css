@@ -215,3 +215,30 @@ body {
   background-color: #cdd3df;
   color: #182433;
 }
+
+
+
+
+/* Tamaño de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;          /* ancho vertical */
+    height: 10px;         /* alto horizontal (si existiera) */
+}
+
+/* Fondo del track (la pista) */
+::-webkit-scrollbar-track {
+    background: #1a1a1a;  /* color de fondo */
+    border-radius: 15px;
+}
+
+/* Barra que se mueve */
+::-webkit-scrollbar-thumb {
+    background: #6c1b9c;  /* color principal */
+    border-radius: 10px;
+     /* borde para hacerlo más elegante */
+}
+
+/* Efecto hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c13ad3; 
+}
