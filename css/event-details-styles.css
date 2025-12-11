@@ -16,16 +16,15 @@ body {
 
 /* tamaño de los circulitos de la organizacino del evento */
 .team-avatar {
-    width: 48px;
-    height: 48px;
+    width: 220px;
+    height: 220px;
+    transition: .3s ease;
 }
 
-.team-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.team-avatar:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #c701fe);
 }
-
 
 .table-dark {
     --bs-table-bg: #131212;        /* fondo de las celdas */
@@ -51,3 +50,32 @@ body {
     border-color: #911096!important;
 }
 
+
+.tittlecos{
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.text-blue{
+    background: linear-gradient(80deg, #00ccff, #5703f3, #5a21df, #00c4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.text-secondary{
+    text-align: justify;
+}
+
+.tittle-estilos{
+    font-size: 40px;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #ae00ff, #13f0f8, #8e05ff, #7300ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(28, 148, 223, 0.275);
+}
