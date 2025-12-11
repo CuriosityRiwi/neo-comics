@@ -40,7 +40,7 @@ body {
     color: #f9fafb;
 }
 
-.hero-image {
+.hero-image-cosplay {
     height: 260px;
     background-image: url("../img/events/Cosplays5.jpg");
     background-size: cover;       /* llena todo */
@@ -49,6 +49,67 @@ body {
     border-radius: 20px;
     border-color: #911096!important;
 }
+
+.hero-image-expo {
+    height: 260px;
+    background-image: url("../img/events/arte\ independiente.webp");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-concierto{
+    height: 260px;
+    background-image: url("../img/events/concierto.jpg");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-retro {
+    height: 260px;
+    background-image: url("../img/events/retro-controller-header.avif");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-manga {
+    height: 260px;
+    background-image: url("../img/events/taller\ manga.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-gaming {
+    height: 260px;
+    background-image: url("../img/events/gaming.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-performance {
+    height: 260px;
+    background-image: url("../img/events/show\ cosplay\ performance.webp");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
 
 
 .tittlecos{
