@@ -37,6 +37,7 @@ form{
 .carrusel img {
   width: 50%;
   height: 50vh;
+  border-radius: 20px;
 }
 
 .carrusel{
