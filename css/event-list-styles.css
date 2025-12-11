@@ -292,3 +292,34 @@ payment-box {
     background-color: 0 8px 15px rgba(226, 7, 197, 0.712);
 
 }
+
+
+.footer-custom {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+}
+
+.footer-custom p {
+  color: #cdd3df; 
+  font-size: 0.95rem;
+}
+
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #cdd3df;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cdd3df;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-circle:hover {
+  background-color: #cdd3df;
+  color: #182433;
+}
