@@ -40,7 +40,7 @@ body {
     color: #f9fafb;
 }
 
-.hero-image {
+.hero-image-cosplay {
     height: 260px;
     background-image: url("../img/events/Cosplays5.jpg");
     background-size: cover;       /* llena todo */
@@ -50,6 +50,15 @@ body {
     border-color: #911096!important;
 }
 
+.hero-image-expo {
+    height: 260px;
+    background-image: url("../img/events/arte\ independiente.webp");
+    background-size: cover;       /* llena todo */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* que no se repita */
+    border-radius: 20px;
+    border-color: #911096!important;
+}
 
 .tittlecos{
     font-size: 60px;
