@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <div class="container-fluid">
+
+    <!-- HEADER -->
+    <div class="row align-items-center border-bottom py-2">
+      <div class="col-2">
+        <img src="img/logo/LOGO.png" alt="logo" class="logo img-fluid">
+      </div>
+      <div class="col-10">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1 class="h5 mb-0">Panel Administrativo - Eventos Anime & Cosplay</h1>
+          <button class="admin btn btn-primary">Admin</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="row min-vh-100">
+      
+      <!-- ASIDE -->
+      <aside class="col-2 d-flex flex-column py-3 border-end">
+        <nav class="nav flex-column gap-2">
+          <button class="btn btn-outline-secondary text-start">Dashboard</button>
+          <button class="btn btn-outline-secondary text-start">Eventos</button>
+          <button class="btn btn-outline-secondary text-start">Crear evento</button>
+          <button class="btn btn-outline-secondary text-start" disabled>Categorías (opcional)</button>
+          <button class="btn btn-outline-secondary text-start" disabled>Ajustes (opcional)</button>
+        </nav>
+      </aside>
+
+      <!-- CONTENIDO -->
+      <main class="col-10 py-3">
+        <div class="row g-3">
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Total eventos</h5>
+                <p class="card-text">18</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Categorías</h5>
+                <p class="card-text">4</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Últimos editados</h5>
+                <p class="card-text">3</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+       <div class="row g-3 mt-3">
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Ver lista de eventos</h5>
+                <p class="card-text">-></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Crear nuevo evento</h5>
+                <p class="card-text">-></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">Gestionar categorías</h5>
+                <p class="card-text">-></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Lista de eventos -->
+
+        <div class="card mt-4">
+          <div class="card-header">
+            Últimos eventos modificados
+          </div>
+
+          <div class="list-group list-group-flush">
+
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <strong>Nombre del evento #1</strong><br>
+                <small>Fecha: 2025-03-15</small>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm">Ver</button>
+            </div>
+
+            
+
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <strong>Nombre del evento #2</strong><br>
+                <small>Fecha: 2025-03-15</small>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm">Ver</button>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <strong>Nombre del evento #3</strong><br>
+                <small>Fecha: 2025-03-15</small>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm">Ver</button>
+            </div>
+
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+              <div>
+                <strong>Nombre del evento #4</strong><br>
+                <small>Fecha: 2025-03-15</small>
+              </div>
+              <button class="btn btn-outline-secondary btn-sm">Ver</button>
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
