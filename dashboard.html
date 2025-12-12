@@ -8,47 +8,40 @@
   <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-  <div class="container-fluid">
+  
 
     <!-- HEADER -->
-    <div class="row align-items-center border-bottom py-2">
-      <div class="col-2">
-        <img src="img/logo/LOGO.png" alt="logo" class="logo img-fluid">
-      </div>
-      <div class="col-10">
-        <div class="d-flex justify-content-between align-items-center">
-          <h1 class="h5 mb-0">Panel Administrativo - Eventos Anime & Cosplay</h1>
-          <button class="admin btn btn-primary">Admin</button>
+     <header class="cabe">
+      <div class="container-fluid"></div>
+      <div class="row align-items-center border-bottom py-2">
+        <div class="col-2">
+          <img src="img/logo/LOGO.png" alt="logo" class="logo img-fluid">
+        </div>
+        <div class="col-10">
+          <div class="d-flex justify-content-between align-items-center">
+            <h1 class="h5 mb-0">Panel Administrativo - Eventos Anime & Cosplay</h1>
+            <button class="admin btn btn-primary">Admin</button>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
     <!-- LAYOUT PRINCIPAL -->
-    <div class="row min-vh-100">
+    <div class="row min-vh-100" style="margin-top: 140px;">
       
       <!-- ASIDE -->
-      <aside class="col-2 d-flex flex-column py-3 border-end">
+      <aside class="col-2 d-flex flex-column py-3 border-end" style="background-color: rgba(211, 7, 238, 0.39);">
         <nav class="nav flex-column gap-2">
-            <a href="dashboard.html" class="btn btn-outline-secondary text-start w-100">
-            Dashboard
-            </a>
-            <a href="dashboard_event.html" class="btn btn-outline-secondary text-start w-100">
-            Eventos
-            </a>
-            <a href="dashboard.html" class="btn btn-outline-secondary text-start w-100">
-            Crear eventos
-            </a>
-            <a href="dashboard.html" class="btn btn-outline-secondary text-start w-100">
-            Categorías
-            </a>
-            <a href="dashboard.html" class="btn btn-outline-secondary text-start w-100">
-            Ajuster
-            </a>
+            <a href="dashboard.html" class="sidebar-btn">Dashboard</a>
+            <a href="dashboard_event.html" class="sidebar-btn">Eventos</a>
+            <a href="#" class="sidebar-btn">Crear eventos</a>
+            <a href="#" class="sidebar-btn">Categorías</a>
+            <a href="#" class="sidebar-btn">Ajuster</a>
         </nav>
       </aside>
 
       <!-- CONTENIDO -->
-      <main class="col-10 py-3">
+      <main class="col-10 py-3" style="margin-top: 5px;">
         <div class="row g-3">
 
           <div class="col-12 col-md-4">
@@ -163,3 +156,4 @@
   </div>
 </body>
 </html>
+
