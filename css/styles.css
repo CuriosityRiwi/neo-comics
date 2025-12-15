@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-color:  rgb(26, 25, 25);
+}
+
+.header-color {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+  position: fixed;   /* Hace el header fijo */
+  top: 0;            /* Lo fija en la parte superior */
+  left: 0;
+  width: 100%;       /* Ocupa todo el ancho */
+  z-index: 1000;    /* Lo mantiene por encima del contenido */  
+}
+
+
+.logo_head {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+
+.logo_head img {
+  width: 100%;   /* todo el ancho del contenedor */
+  height: auto;  /* mantiene proporción */
+}
+.logo_head:hover{
+  filter: drop-shadow(0 0 10px #5000e4)
+          drop-shadow(0 0 20px #d614c6)
+          drop-shadow(0 0 10px #dddbe0);
+  transform: scale3d(1.05);
+}
+
+.vincule{
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+  font-weight: 600px;
+}
+
+
+.vincule:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 6px #f50aa7)
+            drop-shadow(0 0 12px #b31fb3)
+            drop-shadow(0 0 20px #dfd5e0);
+
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item {
+  margin-left: 35px;
+  
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+
+.hero-video {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.hero-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); 
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; 
+}
+
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+
+  background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
+
+  padding-top: 0 !important;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+  display: inline-block; 
+  padding-top: 0 !important;
+}
+
+
+.subtitle-color{
+  background: linear-gradient(307deg, #1be0e0, #f731e7);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card {
+  width: 18rem;
+  background-color:  rgb(26, 25, 25);
+  
+}
+
+.card-border {
+  transition: 0.5s ease-in-out;
+
+}
+
+.card-border:hover {
+  box-shadow: #8e07af 0px 0px 10px,
+            #a76da2 0px 0px 20px,
+            #dddbe0 0px 0px 10px;
+  transform: scale(1.05);
+}
+
+.card-title {
+  background: linear-gradient(90deg,  #7c4dea, #00c4ff,  #7c4dea, #00c4ff);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-text {
+  color: white;
+}
+
+.card-circle {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.card-event {
+  width: 35rem;
+}
+
+.card-event-img {
+  width: 100%;
+  height: 20rem;   
+  object-fit: cover; 
+}
+
+.form-measures {
+  width: 50rem;
+}
+
+
+.footer-custom {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+}
+
+.footer-custom p {
+  color: #cdd3df; 
+  font-size: 0.95rem;
+}
+
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #cdd3df;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cdd3df;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-circle:hover {
+  background-color: #cdd3df;
+  color: #182433;
+}
+
+
+
+
+/* Tamaño de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;          /* ancho vertical */
+    height: 10px;         /* alto horizontal (si existiera) */
+}
+
+/* Fondo del track (la pista) */
+::-webkit-scrollbar-track {
+    background: #1a1a1a;  /* color de fondo */
+}
+
+/* Barra que se mueve */
+::-webkit-scrollbar-thumb {
+    background: #6c1b9c;  /* color principal */
+    border-radius: 10px;
+     /* borde para hacerlo más elegante */
+}
+
+/* Efecto hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c13ad3; 
+}
+
+.btn-login {
+  left: 8rem;
+  position: relative;
+  align-items: center;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right : 20px;
+  background-color: #6c1b9c;
+  color: white;
+  height: 30px;
+  border: #5000e4;
+  text-decoration: none;
+}
+
+.btn-login:hover{
+  background-color: #1be0e0;
+}

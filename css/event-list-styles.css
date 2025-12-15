@@ -1,0 +1,325 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    height: 100vh;
+    padding-top: 70px;
+    
+}
+
+.header-color {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+  position: fixed;   /* Hace el header fijo */
+  top: 0;            /* Lo fija en la parte superior */
+  left: 0;
+  width: 100%;       /* Ocupa todo el ancho */
+  z-index: 1000;    /* Lo mantiene por encima del contenido */  
+}
+
+
+.logo_head {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.nav-item {
+  margin-left: 35px;
+  
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.logo_head img {
+  width: 100%;   /* todo el ancho del contenedor */
+  height: auto;  /* mantiene proporción */
+}
+.logo_head:hover{
+  filter: drop-shadow(0 0 10px #5000e4)
+          drop-shadow(0 0 20px #d614c6)
+          drop-shadow(0 0 10px #dddbe0);
+  transform: scale3d(1.05);
+}
+
+.vincule{
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+  text-decoration: none;
+  font-weight: 600px;
+}
+
+
+.vincule:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 6px #f50aa7)
+            drop-shadow(0 0 12px #b31fb3)
+            drop-shadow(0 0 20px #dfd5e0);
+
+}
+
+main{
+    margin-top: 150px;
+}
+
+.tittle{
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 90px;
+    background: linear-gradient(90deg, #ff007f, #cf34df, #00c4ff, #00c4ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+.subtittle{
+    font-size: 45px;
+    background: linear-gradient(90deg,#00c4ff, #00c4ff, #ff007f, #c32ad4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.card{
+    background-color: rgb(44, 43, 44);
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+    border-color: #911096;
+    
+}
+.row > .col-md-4 {
+    display: flex;
+}
+
+.row > .col-md-4 .card {
+    height: 100%;
+}
+
+.card:hover{
+    box-shadow: #8e07af 0px 0px 10px,
+                #a76da2 0px 0px 20px,
+                #dddbe0 0px 0px 10px;
+    transform: scale(1.05);
+}
+
+/* Tamaño de la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 10px;          /* ancho vertical */
+    height: 10px;         /* alto horizontal (si existiera) */
+}
+
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;  /* color de fondo */
+    border-radius: 15px;
+}
+
+/* Barra que se mueve */
+::-webkit-scrollbar-thumb {
+    background: #6c1b9c;  /* color principal */
+    border-radius: 10px;
+     /* borde para hacerlo más elegante */
+}
+
+/* Efecto hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #c13ad3; 
+}
+
+.link_line{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.first_img{
+    height: 400px;
+    width: 1100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.tittlecos{
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;       
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.footer-custom {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+}
+
+.footer-custom p {
+  color: #cdd3df; 
+  font-size: 0.95rem;
+}
+
+payment-box {
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Columna izquierda */
+.payment-menu {
+    background: #610fad;
+    padding: 0;
+}
+
+.payment-menu input {
+    display: none;
+}
+
+.payment-item {
+    display: block;
+    padding: 18px;
+    color: white;
+    font-size: 17px;
+    border-bottom: 1px solid #610fad;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-item:hover {
+    background: #9d17af;
+    border-radius: 20px;
+}
+
+/* El seleccionado se marca con CSS */
+#opt1:checked + label[for="opt1"],
+#opt2:checked + label[for="opt2"],
+#opt3:checked + label[for="opt3"],
+#opt4:checked + label[for="opt4"],
+#opt5:checked + label[for="opt5"] {
+    background: #9d17af;
+    border-radius: 20px;
+}
+
+/* Columna derecha */
+.payment-content {
+    background: #f7f8fa;
+    padding: 30px;
+    min-height: 250px;
+}
+
+/* Ocultar todo inicialmente */
+.content-box {
+    display: none;
+}
+
+
+
+.content-box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.content-box img {
+    width: 90px;
+    margin: 10px;
+}
+.payment-menu {
+    background: #610fad;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.payment-item {
+    display: inline-block; 
+    padding: 18px;
+    color: white;
+    font-size: 17px;
+    border-bottom: 1px solid #610fad;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%; 
+}
+
+.payment-item:hover {
+    background: #9d17af;
+    border-radius: 20px;
+}
+
+/* El seleccionado se marca con CSS */
+#opt1:checked + label[for="opt1"],
+#opt2:checked + label[for="opt2"],
+#opt3:checked + label[for="opt3"],
+#opt4:checked + label[for="opt4"] {
+    background: #9d17af;
+}
+.custom-butt {
+    background: #610fad; 
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(147, 4, 160, 0.466); /* sombra */
+    transition: all 0.3s ease; /* animación suave */
+    cursor: pointer;
+    width: auto;
+}
+
+
+.custom-btn:hover {
+    transform: scale(1.03); /* levanta el botón */
+    background-color: 0 8px 15px rgba(226, 7, 197, 0.712);
+
+}
+
+
+.footer-custom {
+  background: linear-gradient(70deg, #441d64, #801276, #622b6d, #6f0f7c); 
+}
+
+.footer-custom p {
+  color: #cdd3df; 
+  font-size: 0.95rem;
+}
+
+.social-circle {
+  width: 38px;
+  height: 38px;
+  border: 2px solid #cdd3df;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cdd3df;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-circle:hover {
+  background-color: #cdd3df;
+  color: #182433;
+}

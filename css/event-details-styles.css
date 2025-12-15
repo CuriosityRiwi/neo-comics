@@ -1,0 +1,142 @@
+body {
+    padding-top: var(--header-height);
+    margin: 0;
+}
+
+/* ancho máximo de la maqueta */
+.page {
+    max-width: 1100px;
+    margin-top: 120px;               
+}
+
+/* alto del placeholder de imagen */
+.hero-image {
+    height: 260px;
+}
+
+/* tamaño de los circulitos de la organizacino del evento */
+.team-avatar {
+    width: 220px;
+    height: 220px;
+    transition: .3s ease;
+}
+
+.team-avatar:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #c701fe);
+}
+
+.table-dark {
+    --bs-table-bg: #131212;        /* fondo de las celdas */
+    --bs-table-hover-bg: #181818;  /* fondo cuando pasas el mouse */
+}
+
+.bg-bottom {
+    background-color: #000000;
+    background-image:
+        radial-gradient(circle at top left, #000001 0, transparent 55%),
+        radial-gradient(circle at bottom right, #000000 0, transparent 55%),
+        radial-gradient(circle at center, #000000 0, #200125 70%);
+    color: #f9fafb;
+}
+
+.hero-image-cosplay {
+    height: 260px;
+    background-image: url("../img/events/Cosplays5.jpg");
+    background-size: cover;       /* llena todo */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* que no se repita */
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-expo {
+    height: 260px;
+    background-image: url("../img/events/arte\ independiente.webp");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-concierto{
+    height: 260px;
+    background-image: url("../img/events/concierto.jpg");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-retro {
+    height: 260px;
+    background-image: url("../img/events/retro-controller-header.avif");
+    background-size: cover;       
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-manga {
+    height: 260px;
+    background-image: url("../img/events/taller\ manga.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-gaming {
+    height: 260px;
+    background-image: url("../img/events/gaming.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+.hero-image-performance {
+    height: 260px;
+    background-image: url("../img/events/show\ cosplay\ performance.webp");
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 20px;
+    border-color: #911096!important;
+}
+
+
+
+.tittlecos{
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ff007f, #cf34df, #7c4dea, #00c4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.text-blue{
+    background: linear-gradient(80deg, #00ccff, #5703f3, #5a21df, #00c4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.text-secondary{
+    text-align: justify;
+}
+
+.tittle-estilos{
+    font-size: 40px;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #ae00ff, #13f0f8, #8e05ff, #7300ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(28, 148, 223, 0.275);
+}

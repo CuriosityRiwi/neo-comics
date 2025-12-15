@@ -1,0 +1,35 @@
+body{
+    background-color: #333;
+}
+
+
+.logo {
+    width: 124px;
+}
+
+
+.cabe{
+    background-color: blueviolet;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+.sidebar-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 6px;
+    background-color: #f3f3f3;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.sidebar-btn:hover {
+    background-color: #cf0a83a6;
+    transform: scale(1.05);
+
+
+}

@@ -1,0 +1,25 @@
+/* Asegura que la imagen ocupe todo el espacio y sea responsive */
+.imagen-item img {
+  width: 100%; 
+  height: 300px; /* Le da una altura fija */
+  object-fit: cover; /* Recorta la imagen para que llene el espacio sin distorsionarse */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+  transition: transform 0.3s ease-in-out; /* Para una animación suave */
+  
+}
+
+/* El efecto al pasar el ratón */
+.imagen-item:hover img { 
+  transform: scale(1.10); /* Agranda la imagen un 10% */
+  opacity: 0.8; /* Hace la imagen ligeramente transparente */
+  box-shadow: #8e07af 0px 0px 10px,
+                #a76da2 0px 0px 20px,
+                #dddbe0 0px 0px 10px;
+}
+
+.row {
+  padding: 10px;
+  border: 10px; 
+  margin: 10px;   
+} 
+
