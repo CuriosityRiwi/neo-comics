@@ -233,7 +233,6 @@ body {
 /* Fondo del track (la pista) */
 ::-webkit-scrollbar-track {
     background: #1a1a1a;  /* color de fondo */
-    border-radius: 15px;
 }
 
 /* Barra que se mueve */
@@ -246,4 +245,13 @@ body {
 /* Efecto hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #c13ad3; 
+}
+
+.btn-login {
+  left: 8rem;
+  position: relative;
+  align-items: center;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
